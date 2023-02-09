@@ -19,7 +19,6 @@ public class SpringSecurityConfiguration {
 	
 	@Bean
 	public InMemoryUserDetailsManager createUserDetailsManager() {
-		Function<String, String> passwordEncoder = input -> passwordEncoder().encode(input);
 		UserDetails userDetails1 = createNewUser("Jordan", "dummy");
 		UserDetails userDetails2 = createNewUser("Izzy", "dummy");
 		
